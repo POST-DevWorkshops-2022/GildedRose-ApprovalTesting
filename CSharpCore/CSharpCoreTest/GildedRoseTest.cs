@@ -23,7 +23,7 @@ namespace CSharpCore.Test
 
         [Fact]
         [UseReporter(typeof(VisualStudioReporter))]
-        public void OvertimeCalculationToString()
+        public void VerifyStandardItemByToString()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
             GildedRose app = new GildedRose(Items);
@@ -34,7 +34,7 @@ namespace CSharpCore.Test
 
         [Fact]
         [UseReporter(typeof(VisualStudioReporter))]
-        public void OvertimeCalculationJson()
+        public void VerifyStandardItemWithJson()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
             GildedRose app = new GildedRose(Items);
@@ -45,7 +45,7 @@ namespace CSharpCore.Test
 
         [Fact]
         [UseReporter(typeof(VisualStudioReporter))]
-        public void OvertimeCalculationVerifyJson()
+        public void VerifyStandardJsonItem()
         {
             IList<Item> Items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
             GildedRose app = new GildedRose(Items);
@@ -56,7 +56,7 @@ namespace CSharpCore.Test
 
         [Fact]
         [UseReporter(typeof(VisualStudioReporter))]
-        public void OvertimeCalculationCombinations()
+        public void VerifyAllItemCombinations()
         {
             string[] names = { "foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros", };
             int[] quality = { 0, 1, 49, 50 };
